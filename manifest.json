@@ -2,9 +2,11 @@
    "name": "Clicker",
    "version": "1.0",
    "description": "Clicker extension for yoyo freestyles",
+   "permissions":["storage"],
    "background":{
      "scripts":["background.js"],
      "persistent": false
    },
+
    "manifest_version": 2
 }
