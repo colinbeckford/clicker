@@ -1,0 +1,52 @@
+<html>
+<center>
+  <head>
+    <script src="jquery/dist/jquery.min.js"> </script>
+    <h1> jb2 </h1>
+  </head>
+  <body>
+    <text> Input Youtube Link </text>
+    <br>
+    <br>
+    <!-- yt link goes here -->
+    <input id="yt-link"> </input>
+    <br>
+    <br>
+    <!-- submit link button to initialize iframe (below) with youtube video -->
+    <button id="submit"> Submit </button>
+    <br>
+    <br>
+    <iframe> <!-- idk how to do this completely but this is where the youtube link should be played --> </iframe>
+    <br>
+    <br>
+    <!-- text that gets updated with clicks -->
+    <h1 id="click-display"> +0 -0 </h1>
+    <br>
+  </body>
+</center>
+
+<script>
+var pos=0;
+var neg=0;
+
+$("body").on("keydown", function(event)
+{
+  if (event.which == 65)
+  {
+    pos+=1;
+    $("#click-display").text(" +" + pos + " " + "-" + neg);
+  }
+  else if (event.which == 76)
+  {
+    neg+=1;
+    $("#click-display").text(" +" + pos + " " + "-" + neg);
+  }
+  else if (event.which == 48)
+  {
+    neg+=1;
+    $("#click-display").text(" +" + 0 + " " + "-" + 0);
+  }
+});
+
+</script>
+</html>
