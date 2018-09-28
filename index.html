@@ -1,7 +1,9 @@
 <html>
 <center>
   <head>
+     <script type="text/javascript" src="loader.js"></script>
     <script src="jquery/dist/jquery.min.js"> </script>
+    <script src="clicker.js"> </script>
     <h1> jb2 </h1>
   </head>
   <body>
@@ -22,31 +24,9 @@
     <!-- text that gets updated with clicks -->
     <h1 id="click-display"> +0 -0 </h1>
     <br>
+    <br>
+    <div id="chart"> </div>
   </body>
 </center>
 
-<script>
-var pos=0;
-var neg=0;
-
-$("body").on("keydown", function(event)
-{
-  if (event.which == 65)
-  {
-    pos+=1;
-    $("#click-display").text(" +" + pos + " " + "-" + neg);
-  }
-  else if (event.which == 76)
-  {
-    neg+=1;
-    $("#click-display").text(" +" + pos + " " + "-" + neg);
-  }
-  else if (event.which == 48)
-  {
-    neg+=1;
-    $("#click-display").text(" +" + 0 + " " + "-" + 0);
-  }
-});
-
-</script>
 </html>
