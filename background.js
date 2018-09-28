@@ -1,7 +1,8 @@
-// yoyo clicker extension
-
-chrome.runtime.onInstalled.addListener(function() {
-  chrome.storage.sync.set({color: '#3aa757'}, function() {
-          console.log("The color is green.");
+chrome.app.runtime.onLaunched.addListener(function() {
+  chrome.app.window.create('index.html', {
+    'outerBounds': {
+      'width': 400,
+      'height': 500
+    }
   });
 });
