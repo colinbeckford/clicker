@@ -4,8 +4,7 @@
    "description": "Clicker extension for yoyo freestyles",
    "permissions":["storage"],
    "background":{
-     "scripts":["background.js"],
-     "persistent": false
+     "scripts":["background.js"]
    },
 
    "manifest_version": 2
